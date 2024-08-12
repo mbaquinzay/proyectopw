@@ -6,7 +6,7 @@
 
 /* Aumentar tamaño del texto en el Navbar */
 .navbar-brand {
-  font-size: 1.8rem; /* Tamaño de la fuente para "TiendaTech" */
+  font-size: 2.8rem; /* Tamaño de la fuente para "TiendaTech" */
 }
 
 .nav-link {
@@ -76,7 +76,9 @@ body {
 .carousel-inner img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+    /* object-fit: cover; */  
+   object-fit: contain;   /* Asegura que toda la imagen sea visible */
+
   max-height: 500px; /* Ajusta esta altura según sea necesario */
 }
 
