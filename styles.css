@@ -1,7 +1,16 @@
-/* Color Principal */
+/* Navbar y Footer */
 .navbar, .footer {
   background-color: #1A1A2E;
   color: #FFFFFF;
+}
+
+/* Aumentar tamaño del texto en el Navbar */
+.navbar-brand {
+  font-size: 1.8rem; /* Tamaño de la fuente para "TiendaTech" */
+}
+
+.nav-link {
+  font-size: 1.8rem; /* Tamaño de la fuente para los elementos del menú */
 }
 
 /* Fondo */
@@ -23,6 +32,20 @@ body {
 .product-card img {
   max-width: 100%;
   height: auto;
+}
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  text-align: center; /* Centra el texto dentro del card-body */
+}
+
+.card-text.price {
+  font-size: 1.5rem; /* Tamaño del precio */
+  font-weight: bold;
+  color: #FF4500; /* Color del precio */
 }
 
 /* Acentos */
@@ -57,36 +80,36 @@ body {
   max-height: 500px; /* Ajusta esta altura según sea necesario */
 }
 
-/* 768px */
 @media (max-width: 768px) {
   .carousel-inner img {
-      max-height: 300px;
+    max-height: 300px;
   }
 }
 
 @media (min-width: 769px) {
   .carousel-inner img {
-      max-height: 300px;
+    max-height: 300px;
   }
 }
 
-
-  .product-form {
-    background: linear-gradient(135deg, #6d5bba, #8d58bf);
-    color: #fff;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.product-form {
+  background: linear-gradient(135deg, #6d5bba, #8d58bf);
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .product-form input,
 .product-form textarea {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
 .btn-custom {
-    background-color: #ff5e3a;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+  background-color: #ff5e3a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
